@@ -20,17 +20,6 @@ function getCookie(cname) {
   return "";
 }
 
-function checkCookie() {
-  let user = getCookie("username");
-  if (user != "") {
-    alert("Welcome again " + user);
-  } else {
-    user = document.forms.signup.user.value;
-    if (user != "" && user != null) {
-      setCookie("username", user, 365);
-    }
-  }
-}
 function cookies_enabled(){
   if(navigator.cookieEnabled){
     var message;
@@ -40,3 +29,4 @@ function cookies_enabled(){
         return "Cookies are not enabled!";
   }
 }
+     
